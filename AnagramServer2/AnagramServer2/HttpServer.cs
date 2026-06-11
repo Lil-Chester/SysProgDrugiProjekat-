@@ -44,18 +44,14 @@ namespace AnagramServer2
             dispatcherThread.Start();
         }
 
-        // Nova metoda za bezbedno gašenje
         public void Stop()
         {
             Logger.Log("Inicirano gašenje servera.");
 
-            // Zaustavlja primanje novih HTTP zahteva
             listener.Stop();
 
-            // Obaveštava red da više neće biti dodavanja
             queue.StopAccepting();
 
-            // Dajemo kratko vreme trenutnim taskovima da se završe, a zatim gasimo Logger
             Thread.Sleep(1000);
             Logger.Stop();
         }
@@ -93,14 +89,12 @@ namespace AnagramServer2
             }
             catch (HttpListenerException)
             {
-                // Ovaj izuzetak se očekivano okida kada pozovemo listener.Stop()
                 Logger.Log("Listener je uspešno zaustavljen.");
             }
         }
 
         private void DispatchLoop()
         {
-            // TryDequeue vraća true dokle god ima elemenata ili dok red nije zvanično zatvoren
             while (queue.TryDequeue(out RequestData request))
             {
                 semaphore.Wait();

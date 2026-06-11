@@ -12,7 +12,6 @@ namespace AnagramServer2
         {
             string text;
 
-            // Asinhrono citanje celog fajla
             using (StreamReader reader = new StreamReader(path))
             {
                 text = await reader.ReadToEndAsync();

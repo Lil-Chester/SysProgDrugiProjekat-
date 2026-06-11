@@ -28,12 +28,10 @@ namespace AnagramServer2
             }
         }
 
-        // Nova metoda za gašenje loggera bez gubitka poslednjih logova
         public static void Stop()
         {
             logQueue.CompleteAdding();
 
-            // Blokira glavnu nit dok logger ne upiše poslednju poruku iz reda
             loggingThread?.Join();
         }
 
@@ -45,7 +43,7 @@ namespace AnagramServer2
                 {
                     File.AppendAllText("logs.txt", message + Environment.NewLine);
                 }
-                catch { /* Ignorišemo greške kod logovanja */ }
+                catch { }
             }
         }
     }

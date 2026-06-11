@@ -11,7 +11,6 @@ namespace AnagramServer2
 
         public Task<string> GetOrAddAsync(string key, Func<Task<string>> valueFactory)
         {
-            // Ako ključ postoji ali je istekao rezultat, izbriši ga
             if (cache.TryGetValue(key, out var existingEntry) && existingEntry.IsExpired)
             {
                 cache.TryRemove(key, out _);
@@ -27,7 +26,6 @@ namespace AnagramServer2
                 };
             });
 
-            // Dupla provera u slučaju race condition-a
             if (entry.IsExpired)
             {
                 cache.TryRemove(key, out _);
@@ -39,7 +37,6 @@ namespace AnagramServer2
             }
             else
             {
-                // Ako nismo kreirali novi (Lazy nije tek inicijalizovan), znači da je Cache Hit
                 if (entry.TaskFactory.IsValueCreated)
                 {
                     Logger.Log($"CACHE HIT: {key}");

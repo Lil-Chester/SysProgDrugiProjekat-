@@ -13,7 +13,6 @@ namespace AnagramServer2
 
             Console.WriteLine("Unesite 'exit' za bezbedno gašenje servera.");
 
-            // Petlja koja vrti sve dok se ne unese komanda za izlaz
             while (true)
             {
                 string unos = Console.ReadLine();

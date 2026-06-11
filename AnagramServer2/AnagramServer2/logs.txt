@@ -93,3 +93,7 @@
 [2026-06-11 02:31:10] Inicirano gašenje servera.
 [2026-06-11 02:31:10] Listener je uspešno zaustavljen.
 [2026-06-11 02:31:10] Dispečer je završio sa radom.
+[2026-06-11 23:47:05] Server pokrenut.
+[2026-06-11 23:47:17] Primljen zahtev: fajl.txt sako (Smešten u red)
+[2026-06-11 23:47:17] Obrada zahteva započeta: fajl.txt sako
+[2026-06-11 23:47:17] CACHE MISS: fajl.txt:sako

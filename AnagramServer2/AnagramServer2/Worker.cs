@@ -18,10 +18,8 @@ namespace AnagramServer2
 
         public Task ProcessAsync(RequestData request)
         {
-            // Pokretanje asinhrone obrade
             Task<(int StatusCode, string ResponseMessage)> processingTask = ProcessCoreAsync(request);
 
-            // Upotreba ContinueWith za demonstraciju kontinuacija i slanje odgovora
             return processingTask.ContinueWith(async t =>
             {
                 try
@@ -58,7 +56,6 @@ namespace AnagramServer2
 
             string cacheKey = $"{request.FileName}:{request.Word}";
 
-            // Prosleđujemo metodu kao asinhronu factory funkciju
             string result = await cache.GetOrAddAsync(cacheKey, () =>
                 AnagramService.CountAnagramsAsync(filePath, request.Word));
 
