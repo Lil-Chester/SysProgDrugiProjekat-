@@ -46,11 +46,14 @@ namespace AnagramServer2
 
         public void Stop()
         {
-            Logger.Log("Inicirano gašenje servera.");
+            Logger.Log
+            (
+                "Inicirano gašenje servera."
+            );
 
             listener.Stop();
-
             queue.StopAccepting();
+            cache.Stop();
 
             Thread.Sleep(1000);
             Logger.Stop();

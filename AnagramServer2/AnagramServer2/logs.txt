@@ -97,3 +97,30 @@
 [2026-06-11 23:47:17] Primljen zahtev: fajl.txt sako (Smešten u red)
 [2026-06-11 23:47:17] Obrada zahteva započeta: fajl.txt sako
 [2026-06-11 23:47:17] CACHE MISS: fajl.txt:sako
+[2026-06-18 17:27:13] Server pokrenut.
+[2026-06-18 17:27:26] Primljen zahtev: fajl.txt sako (Smešten u red)
+[2026-06-18 17:27:26] Obrada zahteva započeta: fajl.txt sako
+[2026-06-18 17:27:26] CACHE MISS: fajl.txt:sako
+[2026-06-18 17:27:29] Primljen zahtev: fajl.txt sako (Smešten u red)
+[2026-06-18 17:27:29] Obrada zahteva započeta: fajl.txt sako
+[2026-06-18 17:27:29] CACHE HIT: fajl.txt:sako
+[2026-06-18 23:19:15] Server pokrenut.
+[2026-06-18 23:19:25] Primljen zahtev: fajl.txt sako (Smešten u red)
+[2026-06-18 23:19:25] Obrada zahteva započeta: fajl.txt sako
+[2026-06-18 23:19:25] CACHE MISS: fajl.txt:sako
+[2026-06-19 02:38:23] Server pokrenut.
+[2026-06-19 02:38:28] Primljen zahtev: fajl.txt sako (Smešten u red)
+[2026-06-19 02:38:28] Obrada zahteva započeta: fajl.txt sako
+[2026-06-19 02:38:28] CACHE MISS: fajl.txt:sako
+[2026-06-19 02:38:30] Primljen zahtev: fajl.txt sako (Smešten u red)
+[2026-06-19 02:38:30] Obrada zahteva započeta: fajl.txt sako
+[2026-06-19 02:38:30] CACHE HIT: fajl.txt:sako
+[2026-06-19 02:38:57] Inicirano gašenje servera.
+[2026-06-19 02:38:57] Listener je uspešno zaustavljen.
+[2026-06-19 02:38:57] Dispečer je završio sa radom.
+[2026-06-19 02:39:23] Cache cleanup thread zaustavljen.
+[2026-06-19 02:42:16] Server pokrenut.
+[2026-06-19 02:42:18] Inicirano gašenje servera.
+[2026-06-19 02:42:18] Listener je uspešno zaustavljen.
+[2026-06-19 02:42:18] Dispečer je završio sa radom.
+[2026-06-19 02:42:46] Cache cleanup thread zaustavljen.
